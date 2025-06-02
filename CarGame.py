@@ -27,5 +27,6 @@ def car_game():
             
 if __name__ == "__main__":
     print("Welcome to the Car Game!\n")
+    print("Type 'help' for a list of commands.\n")
     car_game()
     print("Thank you for playing!")

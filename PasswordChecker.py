@@ -12,7 +12,8 @@ def check_password_strength(password):
     
     return True, "Strong: Your password is strong."
 
-print("Hello there!")
+print("Hello there! Welcome to the Password Strength Checker.\n"
+      "Please follow the instructions to create a strong password.\n")
 
 while True:
     password = input("Please enter your password: ")
@@ -28,3 +29,5 @@ while True:
         break
     else:
         print("Passwords do not match. Please try again.")
+
+print("\nThank you for using the Password Strength Checker. Your password is set!")

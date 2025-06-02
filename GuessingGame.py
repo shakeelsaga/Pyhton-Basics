@@ -16,6 +16,6 @@ def guess_number():
         print("Sorry, you've used all your guesses. The number was", guess_target, "\n")
 
 if __name__ == "__main__":
-    print("Welcome to the Guessing Game!\n")
+    print("Welcome to the Guessing Game!\nYou have 3 attempts to guess the number between 1 and 20.\n")
     guess_number()
     print("Thank you for playing!")

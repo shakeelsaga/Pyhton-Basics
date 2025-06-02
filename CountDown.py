@@ -16,4 +16,6 @@ def countDown():
     print("\nCountdown finished!")
 
 if __name__ == "__main__":
+    print("Welcome to the Countdown Timer!\n")
     countDown()
+    print("\nThank you for using the Countdown Timer!")
