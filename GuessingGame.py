@@ -1,5 +1,7 @@
+import random
+
 def guess_number():
-    guess_target = 12
+    guess_target = random.randint(1, 20)
     guess_count = 0
     guess_limit = 3
     while guess_count < guess_limit:
