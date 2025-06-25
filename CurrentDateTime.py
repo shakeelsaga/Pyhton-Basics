@@ -1,3 +1,5 @@
 from datetime import datetime
 
-print("Current date and time:", datetime.now())
+if __name__ == "__main__":
+    print("Current date and time:", datetime.now())
+    # Print the current date and time

@@ -39,25 +39,25 @@ def calculate(expression):
         return divide(num1, num2)
     elif operator == '%':
         return modulus(num1, num2)
-
-print("Welcome to the Simple Calculator!\n")
-print("Operations allowed are: +, -, *, /, %")
-print("Enter expressions in the format: number operator number (e.g., 10 + 20)\n")
-
-while True:
-    try:
-        user_input = input("Enter an expression: ")
-        result = calculate(user_input)
-        print("Result:", result)
-    except Exception as e:
-        print("Error:", e)
+if __name__ == "__main__":
+    print("Welcome to the Simple Calculator!\n")
+    print("Operations allowed are: +, -, *, /, %")
+    print("Enter expressions in the format: number operator number (e.g., 10 + 20)\n")
 
     while True:
-        cont = input("\nDo you want to continue? (yes/no): ").strip().lower()
-        if cont in ['yes', 'no']:
+        try:
+            user_input = input("Enter an expression: ")
+            result = calculate(user_input)
+            print("Result:", result)
+        except Exception as e:
+            print("Error:", e)
+
+        while True:
+            cont = input("\nDo you want to continue? (yes/no): ").strip().lower()
+            if cont in ['yes', 'no']:
+                break
+            print("Please answer with 'yes' or 'no'.\n")
+        if cont == 'no':
+            print("\nThank you for using the calculator!")
             break
-        print("Please answer with 'yes' or 'no'.\n")
-    if cont == 'no':
-        print("\nThank you for using the calculator!")
-        break
-    print()
+        print()
